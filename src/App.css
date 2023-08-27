@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto+Mono&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  --exo2: 'Exo 2', sans-serif;
+  --roboto: 'Roboto Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--font-size-md);
+  font-family: var(--roboto);
+}
+
+.navbar a:hover {
+  color: grey;
+}
+
+.section-title {
+  font-size: var(--font-size-xxl);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--exo2);
+}
+
+#home {
+  height: 80vh;
+  width: 100%;
+}
+
+.home {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--roboto);
+  width: 80%;
+  margin-inline: auto;
+}
+
+.home-title, .home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.home-title-message {
+  font-size: var(--font-size-md);
+}
+
+.home-title-position {
+  font-size: var(--font-size-md);
+}
+
+.home-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#about {
+  color: white;
+  background-color: black;
+}
+
+.about {
+  height: 80vh;
+  font-family: var(--roboto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-paragraph {
+  font-size: var(--font-size-md);
+  width: 100%;
+}
+
+.icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.react-icon {
+  font-size: 3rem;
+}
+
+#experience {
+  height: 80vh;
+  width: 100%;
+}
+
+
+.experience {
+  width: 80%;
+  margin-inline: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  font-family: var(--roboto);
+}
+
+.experience-title {
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.experience-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-info {
+  width: 40%;
+}
+
+.experience-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: var(--font-size-md);
+  font-family: var(--roboto);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.experience-btn.selected {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.experience-btn:hover {
+  cursor: pointer;
+}
+
+#projects {
+  height: 110vh;
+  background-color: black;
+  color: white;
+}
+
+.projects-title {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.personal-projects {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.project {
+  height: 70vh;
+  width: 40%;
+  font-family: var(--roboto);
+  gap: 20px;
+}
+
+.project-name {
+  font-size: var(--font-size-md);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-img {
+  margin-bottom: 20px;
+}
+
+.project-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.project-description {
+  font-size: var(--font-size-sm);
+  margin-bottom: 20px;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#footer {
+  height: 10vh;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--roboto);
+  font-size: 1.2rem;
+}
+
+#footer a {
+  color: black;
+}
+
+@media (max-width: 1150px) {
+  .home-image {
+    display: none;
+  }
+
+  #projects {
+    height: 160vh;
+  }
+
+  .personal-projects {
+    flex-direction: column;
+    align-items: center;
+    height: 140vh;
+    gap: 15px;
+  }
+
+  .project {
+    width: 55%;
+    height: 70vh;
+  }
+
+}
+
+@media (max-width: 940px) {
+
+  .experience {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .experience-info {
+    width: 100%;
+    height: 50%;
+  }
+
+  .experience-title {
+    writing-mode: horizontal-tb;
+    transform: rotate(0deg);
+  }
+
+  .experience-buttons {
+    flex-direction: row;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .project {
+    width: 80%;
+    height: 70vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar a {
+    font-size: var(--font-size-sm)
+  }
+
+  .experience-btn {
+    font-size: var(--font-size-sm);
+  }
+
+  .react-icon {
+  font-size: 2rem;
+  }
+
+  #projects {
+    height: 150vh;
+  }
+
+
+  .project {
+    height: 65vh;
+  }
+}
