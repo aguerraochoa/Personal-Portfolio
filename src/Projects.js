@@ -22,7 +22,7 @@ const Projects = () => {
                         users to play the top Beatles songs. Most of the features
                         in the page are implemented using HTML and CSS, and are
                         primarily for visual purposes.</div>
-                    <a href="https://aguerraochoa.github.io/" target="_blank" rel="noopener noreferrer" className="project-link">Link</a>
+                    <a href="https://silver-queijadas-943918.netlify.app/" target="_blank" rel="noopener noreferrer" className="project-link">Link</a>
                 </div>
                 <div className="project">
                     <div className="project-name">Full Stack Blogging Platform</div>
