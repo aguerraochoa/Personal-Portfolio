@@ -1,6 +1,7 @@
 import React from 'react';
 import BlogPage from './images/daily-blogs.png';
 import SpotifyPage from './images/spotify.png';
+import SoftballPage from './images/softball.png';
 
 const Projects = () => {
     return (
@@ -37,6 +38,19 @@ const Projects = () => {
                         The frontend was crafted using Bootstrap, HTML, CSS, and JavaScript to ensure a 
                         responsive and visually appealing user interface.</div>
                     <a href="https://calm-gray-betta-wear.cyclic.cloud" target="_blank" rel="noopener noreferrer" className="project-link">Link</a>
+                </div>
+                <div className="project">
+                    <div className="project-name">Softball Stats Pro</div>
+                    <div className="project-img">
+                        <img src={SoftballPage} alt="Daily blogs page"/>
+                    </div>
+                    <div className="project-description">
+                        Designed and developed Softball Stats Pro, a dynamic web application built to 
+                        facilitate the tracking of player statistics throughout a softball season. Using 
+                        React and Firebase Firestore, I managed to create a user-friendly platform that 
+                        allows softball teams to manage their player data effortlessly.
+                    </div>
+                    <a href="https://softball-stats-pro1.web.app/" target="_blank" rel="noopener noreferrer" className="project-link">Link</a>
                 </div>
             </div>
         </section>

@@ -44,10 +44,13 @@ html {
   color: black;
   font-size: var(--font-size-md);
   font-family: var(--roboto);
+  padding: 5px 7px;
+  border-radius: 5px;
 }
 
 .navbar a:hover {
-  color: grey;
+  color: white;
+  background-color: black;
 }
 
 .section-title {
@@ -187,7 +190,6 @@ html {
 }
 
 #projects {
-  height: 130vh;
   background-color: black;
   color: white;
 }
@@ -199,11 +201,12 @@ html {
 }
 
 .personal-projects {
-  height: 90vh;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding-bottom: 10vh;
 }
 
 .project {
@@ -242,10 +245,15 @@ html {
   border-radius: 10px;
 }
 
+.project-link:hover {
+  color: black;
+  background-color: white;
+}
+
 #footer {
   height: 10vh;
   display: flex;
-  gap: 50px;
+  gap: 25px;
   align-items: center;
   justify-content: center;
   font-family: var(--roboto);
@@ -261,20 +269,12 @@ html {
     display: none;
   }
 
-  #projects {
-    height: 160vh;
+  .project {
+    width: 55%;
   }
 
   .personal-projects {
-    flex-direction: column;
-    align-items: center;
-    height: 140vh;
-    gap: 15px;
-  }
-
-  .project {
-    width: 55%;
-    height: 70vh;
+    gap: 0px;
   }
 
 }
@@ -305,7 +305,6 @@ html {
 @media (max-width: 750px) {
   .project {
     width: 80%;
-    height: 70vh;
   }
 }
 
@@ -320,14 +319,5 @@ html {
 
   .react-icon {
   font-size: 2rem;
-  }
-
-  #projects {
-    height: 150vh;
-  }
-
-
-  .project {
-    height: 65vh;
   }
 }
