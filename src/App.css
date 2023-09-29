@@ -70,7 +70,7 @@ html {
 }
 
 .home {
-  height: 80vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,13 +100,19 @@ html {
   max-height: 100%;
 }
 
+@media (max-width: 390px) {
+  #home .section-title {
+    font-size: var(--font-size-xl)
+  }
+}
+
 #about {
   color: white;
   background-color: black;
+  padding: 20vh 0;
 }
 
 .about {
-  height: 80vh;
   font-family: var(--roboto);
   display: flex;
   justify-content: center;
@@ -137,15 +143,15 @@ html {
 }
 
 #experience {
-  height: 80vh;
   width: 100%;
+  padding: 20vh 0;
 }
 
 
 .experience {
   width: 80%;
-  margin-inline: auto;
   height: 100%;
+  margin-inline: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -192,12 +198,13 @@ html {
 #projects {
   background-color: black;
   color: white;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
 }
 
 .projects-title {
   text-align: center;
-  padding-top: 15vh;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .personal-projects {
@@ -210,7 +217,6 @@ html {
 }
 
 .project {
-  height: 70vh;
   width: 40%;
   font-family: var(--roboto);
   gap: 20px;
@@ -220,6 +226,9 @@ html {
   font-size: var(--font-size-md);
   text-align: center;
   margin-bottom: 20px;
+  border: 1px solid white;
+  padding: 5px 0;
+  border-radius: 5px;
 }
 
 .project-img {
@@ -238,16 +247,14 @@ html {
 }
 
 .project-link {
-  color: white;
+  color: black;
   text-decoration: none;
   border: 1px solid white;
   padding: 5px 10px;
-  border-radius: 10px;
-}
-
-.project-link:hover {
-  color: black;
+  border-radius: 5px;
   background-color: white;
+  display: block;
+  text-align: center;
 }
 
 #footer {
@@ -273,13 +280,13 @@ html {
     width: 55%;
   }
 
-  .personal-projects {
-    gap: 0px;
-  }
-
 }
 
 @media (max-width: 940px) {
+
+  .about-content .section-title {
+    text-align: center;
+  }
 
   .experience {
     flex-direction: column;
@@ -309,6 +316,11 @@ html {
 }
 
 @media (max-width: 600px) {
+
+  .navbar {
+    height: 8vh;
+  }
+
   .navbar a {
     font-size: var(--font-size-sm)
   }

@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="section-title projects-title">Projects</div>
             <div className="personal-projects">
                 <div className="project">
-                    <div className="project-name">Spotify Clone - Artists Page</div>
+                    <div className="project-name">The Beatles Beat Hub</div>
                     <div className="project-img">
                         <img src={SpotifyPage} alt="Spotify artists page"/>
                     </div>
@@ -26,7 +26,7 @@ const Projects = () => {
                     <a href="https://beatles-beat-hub.web.app/" target="_blank" rel="noopener noreferrer" className="project-link">Link</a>
                 </div>
                 <div className="project">
-                    <div className="project-name">Full Stack Blogging Platform</div>
+                    <div className="project-name">Daily Blogs</div>
                     <div className="project-img">
                         <img src={BlogPage} alt="Daily blogs page"/>
                     </div>
