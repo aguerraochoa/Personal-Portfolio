@@ -198,8 +198,7 @@ html {
 #projects {
   background-color: black;
   color: white;
-  padding-top: 20vh;
-  padding-bottom: 10vh;
+  padding: 18vh 0 10vh 0;
 }
 
 .projects-title {
@@ -264,7 +263,7 @@ html {
   align-items: center;
   justify-content: center;
   font-family: var(--roboto);
-  font-size: 1.2rem;
+  font-size: var(--font-size-sm);
 }
 
 #footer a {
@@ -332,4 +331,16 @@ html {
   .react-icon {
   font-size: 2rem;
   }
+}
+
+@media (max-width: 600px) {
+  
+  #about, #experience {
+    padding: 14vh, 0;
+  }
+
+  #projects {
+    padding: 12vh 0 10vh 0;
+  }
+
 }

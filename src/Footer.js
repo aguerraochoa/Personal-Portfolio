@@ -11,7 +11,7 @@ const Footer = () => {
             <a href="https://github.com/aguerraochoa" target="_blank" rel="noopener noreferrer">
                 <AiFillGithub style={{ fontSize: "2rem" }} />
             </a>
-            <div>&copy; { new Date().getFullYear() } - Andres Guerra</div>
+            <div class="footer-name">&copy; { new Date().getFullYear() } - Andres Guerra</div>
         </section>
     );
 };
